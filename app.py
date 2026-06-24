@@ -72,6 +72,31 @@ st.markdown("""
     .stCheckbox>div>label {
         color: #e2e8f0 !important;
     }
+    .contact-box {
+        background: rgba(4, 12, 27, 0.9);
+        border: 1px solid rgba(0, 240, 255, 0.25);
+        border-radius: 20px;
+        padding: 18px;
+        box-shadow: 0 0 30px rgba(0, 240, 255, 0.08);
+        margin-top: 18px;
+    }
+    .contact-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: linear-gradient(135deg, #ff007f, #7928ca);
+        color: #ffffff !important;
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 12px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    .contact-button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 0 18px rgba(255, 0, 127, 0.25);
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -477,6 +502,28 @@ with st.sidebar:
         )
     legend_html += '</div>'
     st.markdown(legend_html, unsafe_allow_html=True)
+
+    contact_html = """
+    <div class='contact-box'>
+      <div style='display:flex; align-items:center; gap:12px; margin-bottom:14px;'>
+        <div style='width:42px; height:42px; border-radius:14px; background: linear-gradient(135deg, #ff007f, #7928ca); display:flex; align-items:center; justify-content:center;'>
+          <span style='font-size:1.2rem;'>💬</span>
+        </div>
+        <div>
+          <strong>للطلبات أو استفسار الاشتراكات</strong><br>
+          <span style='color:#cbd5e1; font-size:0.92rem;'>تواصل معنا عبر تلغرام أو واتساب مباشرة.</span>
+        </div>
+      </div>
+      <div style='display:flex; flex-direction:column; gap:8px;'>
+        <a href='https://t.me/TECHBITTrading' target='_blank' class='contact-button'>📱 TELEGRAM</a>
+        <a href='https://wa.me/967739942424' target='_blank' class='contact-button'>📲 WHATSAPP</a>
+      </div>
+      <div style='margin-top:14px; color:#cbd5e1; font-size:0.92rem;'>
+        <strong>PHONE:</strong> +967 784983835
+      </div>
+    </div>
+    """
+    st.markdown(contact_html, unsafe_allow_html=True)
 
 # --- الوجهة الرئيسية للتطبيق ---
 st.title("🌌 TECH BIT STUDIO")
