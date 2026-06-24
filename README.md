@@ -91,7 +91,7 @@ streamlit run studio.py
 
 ```powershell
 $env:OPENROUTER_API_KEY = "sk-or..."
-streamlit run studio.py
+streamlit run app.py
 ```
 
 1. استخدام التطبيق:
