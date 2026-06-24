@@ -2,7 +2,7 @@
 
 This project is a Streamlit front-end for generating videos via OpenRouter-like APIs. It includes:
 
-- A polished Arabic/RTL Streamlit app (`app.py`).
+- A polished Arabic/RTL Streamlit app (`app.py`).https://techbitstudio-rfoak99gbkhqwu86er99sq.streamlit.app/
 - Robust synchronous polling with progress UI and downloadable video.
 - Optional background-worker integration via RQ/Redis (worker not required for the synchronous flow).
 
