@@ -626,9 +626,12 @@ with tab_generate:
             option_ids = ['']
 
         # prefer explicit selection from session_state if present
+        preferred_default_model = "x-ai/grok-imagine-video-20260512"
         prev_sel = st.session_state.get('selected_model_id')
         if prev_sel and prev_sel in option_ids:
             default_index = option_ids.index(prev_sel)
+        elif preferred_default_model in option_ids:
+            default_index = option_ids.index(preferred_default_model)
         else:
             default_index = 0
 
